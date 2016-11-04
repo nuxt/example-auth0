@@ -1,25 +1,39 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Link from 'next/link';
-import css from 'next/css';
 
-const style = css({
-  transition: 'all .4s',
-  height: '100vh',
-  color: '#fff',
-  background: '#2ecc71',
-  ':hover': {
-    background: '#27ae60',
-  },
-  '@media (max-width: 600px)': {
-    background: '#3498db',
-    ':hover': {
-      background: '#2980b9',
-    },
-  },
-});
+import defaultPage from '../hocs/defaultPage';
 
-export default () => (
-  <div className={style}>
-    Home:<Link href="/about">About</Link>
+const links = [
+  { href: '/about', text: 'About' },
+  { href: '/secret', text: 'Top Secret', authRequired: true },
+  { href: '/auth/sign-in', text: 'Sign In' },
+  { href: '/auth/sign-off', text: 'Sign Off', authRequired: true },
+];
+
+const getAllowedLinks = isAuthenticated => links.filter(l => !l.authRequired || (l.authRequired && isAuthenticated));
+
+const Index = ({ isAuthenticated }) => (
+  <div>
+    <div>
+      <ul>
+        <li>Home</li>
+        {getAllowedLinks(isAuthenticated).map(l => (
+          <li key={l.href}>
+            <Link href={l.href}>{l.text}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+    {isAuthenticated && (
+      <div>
+        This is a super secret div. You can only see this if you are authenticated!
+      </div>
+    )}
   </div>
 );
+
+Index.propTypes = {
+  isAuthenticated: PropTypes.bool.isRequired,
+};
+
+export default defaultPage(Index);
