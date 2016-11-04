@@ -18,5 +18,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+  "now": {
+    "alias": "nextjs-auth0.now.sh"
   }
 }
