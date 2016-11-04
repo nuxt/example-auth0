@@ -14,7 +14,7 @@ const styles = {
 const Secret = ({ loggedUser }) => (
   <div>
     <p className={styles.content}>
-      Hi {loggedUser.email}. This is a super secure page!
+      Hi {loggedUser.email}. This is a super secure page! Try loading this page again using the incognito/private mode of your browser.
     </p>
   </div>
 );

@@ -1,3 +1,5 @@
+/* eslint global-require: 0 */
+
 const getLock = (options) => {
   const CLIENT_ID = '';
   const CLIENT_DOMAIN = '';

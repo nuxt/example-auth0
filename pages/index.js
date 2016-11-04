@@ -72,6 +72,11 @@ const Index = ({ isAuthenticated }) => (
           You're not authenticated yet. Maybe you want to <Link href="/auth/sign-in">{createLink('/auth/sign-in', 'sign in')}</Link> and see what happens?
         </p>
       )}
+      {isAuthenticated && (
+        <p className={styles.content}>
+          Now that you're authenticated, maybe you should try going to our <Link href="/secret">{createLink('/secret', 'super secret page')}</Link>!
+        </p>
+      )}
     </div>
   </div>
 );
