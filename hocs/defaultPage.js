@@ -25,15 +25,11 @@ export default Page => class DefaultPage extends React.Component {
     return {
       ...pageProps,
       loggedUser,
-      currentUrl: !process.browser && ctx.req.url,
+      currentUrl: ctx.pathname,
       isAuthenticated: !!loggedUser,
     };
   }
   render() {
-    const newProps = { ...this.props };
-    if (process.browser) {
-      newProps.currentUrl = window.location.pathname;
-    }
     const cssFiles = [
       'https://unpkg.com/normalize.css@5.0.0/normalize.css',
     ];
@@ -53,8 +49,8 @@ export default Page => class DefaultPage extends React.Component {
         <ForkThis />
         <div className={styles.app}>
           <div className={styles.main}>
-            <Header {...newProps} />
-            <Page {...newProps} />
+            <Header {...this.props} />
+            <Page {...this.props} />
           </div>
         </div>
       </div>
