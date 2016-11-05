@@ -14,9 +14,10 @@ You can access a simple demo here: https://nextjs-auth0.now.sh
 ## Running Locally
 
 ```
-https://github.com/luisrudgegit clone /next.js-auth0.git
+git clone https://github.com/luisrudge/next.js-auth0.git
 cd next.js-auth0
 yarn
+yarn dev
 ```
 
 ## Deploying to [now.sh](https://zeit.co/now/)
