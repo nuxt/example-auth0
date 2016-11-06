@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import { show } from '../../utils/lock';
+import { show } from '../../utils/lock'
 
 export default class SignIn extends React.Component {
-  componentDidMount() {
-    show();
+  componentDidMount () {
+    show()
   }
-  render() {
-    return null;
+  render () {
+    return null
   }
 }

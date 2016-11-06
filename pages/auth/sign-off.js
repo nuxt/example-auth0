@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-import { unsetToken } from '../../utils/auth';
-import { logout } from '../../utils/lock';
+import { unsetToken } from '../../utils/auth'
+import { logout } from '../../utils/lock'
 
 export default class SignOff extends React.Component {
-  componentDidMount() {
-    unsetToken();
-    logout();
+  componentDidMount () {
+    unsetToken()
+    logout()
   }
-  render() {
-    return null;
+  render () {
+    return null
   }
 }

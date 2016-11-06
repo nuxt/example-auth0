@@ -9,7 +9,7 @@ You can access a simple demo here: https://nextjs-auth0.now.sh
 * Create an account at Auth0 (https://auth0.com)
 * Add your endpoints to your client's allowed urls like this ![](https://i.imgur.com/KmIc96g.png)
 * Add your logout endpoint to your account allowed urls like this ![](https://i.imgur.com/5qZYSQ8.png)
-* Add your Auth0 credentials to [this file](https://github.com/luisrudge/next.js-auth0/blob/master/utils/lock.js)
+* Copy the file `config.sample.json` at the root folder, rename it as `config.json` and add your Auth0 keys
 
 ## Running Locally
 
