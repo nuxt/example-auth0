@@ -1,11 +1,11 @@
-import React, { PropTypes } from 'react';
-import Link from 'next/link';
-import css from 'next/css';
+import React, { PropTypes } from 'react'
+import Link from 'next/link'
+import css from 'next/css'
 
 const styles = {
   header: css({
     display: 'flex',
-    marginBottom: 20,
+    marginBottom: 20
   }),
   link: isActive => css({
     marginRight: 20,
@@ -20,21 +20,21 @@ const styles = {
     transition: 'color .25s',
     fontWeight: isActive ? '600' : '400',
     ':hover': {
-      color: '#333',
-    },
-  }),
-};
+      color: '#333'
+    }
+  })
+}
 
 const links = [
   { href: '/', text: 'Home' },
   { href: '/about', text: 'About' },
   { href: '/secret', text: 'Top Secret', authRequired: true },
   { href: '/auth/sign-in', text: 'Sign In', anonymousOnly: true },
-  { href: '/auth/sign-off', text: 'Sign Off', authRequired: true },
-];
+  { href: '/auth/sign-off', text: 'Sign Off', authRequired: true }
+]
 
 const getAllowedLinks = isAuthenticated => links.filter(l => !l.authRequired || (l.authRequired && isAuthenticated))
-                                                .filter(l => !isAuthenticated || (isAuthenticated && !l.anonymousOnly));
+                                                .filter(l => !isAuthenticated || (isAuthenticated && !l.anonymousOnly))
 
 const Header = ({ isAuthenticated, currentUrl }) => (
   <div className={styles.header}>
@@ -46,11 +46,11 @@ const Header = ({ isAuthenticated, currentUrl }) => (
       </Link>
     ))}
   </div>
-);
+)
 
 Header.propTypes = {
   isAuthenticated: PropTypes.bool.isRequired,
-  currentUrl: PropTypes.string.isRequired,
-};
+  currentUrl: PropTypes.string.isRequired
+}
 
-export default Header;
+export default Header

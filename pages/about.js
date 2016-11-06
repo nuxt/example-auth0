@@ -1,20 +1,20 @@
-import React from 'react';
-import css from 'next/css';
+import React from 'react'
+import css from 'next/css'
 
-import defaultPage from '../hocs/defaultPage';
+import defaultPage from '../hocs/defaultPage'
 
 const styles = {
   heading: css({
     fontSize: 40,
     fontWeight: 200,
-    lineHeight: '40px',
+    lineHeight: '40px'
   }),
   content: css({
     fontSize: 20,
     fontWeight: 200,
-    lineHeight: '30px',
-  }),
-};
+    lineHeight: '30px'
+  })
+}
 
 const About = () => (
   <div>
@@ -23,6 +23,6 @@ const About = () => (
       This is just a random page.
     </p>
   </div>
-);
+)
 
-export default defaultPage(About);
+export default defaultPage(About)
