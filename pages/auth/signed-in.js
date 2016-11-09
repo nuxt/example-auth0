@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 
-import { setToken, extractTokenFromHash } from '../../utils/auth'
+import { setToken, checkSecret, extractInfoFromHash } from '../../utils/auth'
 
 export default class SignedIn extends React.Component {
   static propTypes = {
@@ -8,10 +8,11 @@ export default class SignedIn extends React.Component {
   }
 
   componentDidMount () {
-    const token = extractTokenFromHash()
-    if (token) {
-      setToken(token)
+    const {token, secret} = extractInfoFromHash()
+    if (!checkSecret(secret) || !token) {
+      console.error('Something happened with the Sign In request')
     }
+    setToken(token)
     this.props.url.pushTo('/')
   }
   render () {
