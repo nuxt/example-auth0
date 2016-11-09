@@ -1,12 +1,17 @@
 import React from 'react'
 
+import defaultPage from '../../hocs/defaultPage'
 import { show } from '../../utils/lock'
 
-export default class SignIn extends React.Component {
+const CONTAINER_ID = 'put-lock-here'
+
+class SignIn extends React.Component {
   componentDidMount () {
-    show()
+    show(CONTAINER_ID)
   }
   render () {
-    return null
+    return <div id={CONTAINER_ID} />
   }
 }
+
+export default defaultPage(SignIn)

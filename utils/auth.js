@@ -55,9 +55,6 @@ export const getUserFromLocalStorage = () => {
   return json ? JSON.parse(json) : undefined
 }
 
-export const setSecret = (secret) => {
-  console.log('setting secret', secret)
-  window.localStorage.setItem('secret', secret)
-}
+export const setSecret = (secret) => window.localStorage.setItem('secret', secret)
 
 export const checkSecret = (secret) => window.localStorage.secret === secret
