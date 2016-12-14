@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "nextjs-auth0",
   "dependencies": {
     "auth0-lock": "10.7.2",
     "js-cookie": "2.1.3",
