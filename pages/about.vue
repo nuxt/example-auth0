@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Nothing to see here.</h1>
-    <p>This is just a random page.</p>
+    <h1>About Page</h1>
+    <p>Hello, I am the about page :)</p>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main" v-if="loggedUser">
     <img :src="loggedUser.picture"/>
     <p>Hi {{ loggedUser.email }}!</p>
     <p>This is a super secure page! Try loading this page again using the incognito/private mode of your browser.</p>
