@@ -1,3 +1,14 @@
+# dependencies
 node_modules
-.next
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Auth0 config
 config.json

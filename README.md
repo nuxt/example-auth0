@@ -23,3 +23,7 @@ npm run dev
 ## Deploying to [now.sh](https://zeit.co/now/)
 
 If you want to deploy to `now`, make sure you update your `package.json` file's `now.alias` configuration key to your own alias.
+
+## Credits
+
+This example is inspired by [next.js-auth0](https://github.com/luisrudge/next.js-auth0) made by [Luís Rudge](https://github.com/luisrudge).
