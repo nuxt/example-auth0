@@ -21,8 +21,8 @@ This example is inspired by [next.js-auth0](https://github.com/luisrudge/next.js
 ## Running Locally
 
 ```
-git clone https://github.com/Atinux/nuxt-auth0.git
-cd nuxt-auth0
+git clone https://github.com/nuxt/example-auth0.git
+cd example-auth0
 npm install
 npm run dev
 ```
