@@ -2,7 +2,13 @@
 
 > A simple example that shows how to use [Nuxt.js](https://nuxtjs.org) with [Auth0](https://auth0.com)
 
+![nuxt-auth0](https://cloud.githubusercontent.com/assets/904724/22703834/d971838c-ed65-11e6-90f9-5ecf2a1be5f0.gif)
+
 You can access a simple demo here: https://auth0.nuxtjs.org
+
+## Credits
+
+This example is inspired by [next.js-auth0](https://github.com/luisrudge/next.js-auth0) made by [Luís Rudge](https://github.com/luisrudge).
 
 ## Setup
 
@@ -21,6 +27,3 @@ npm install
 npm run dev
 ```
 
-## Credits
-
-This example is inspired by [next.js-auth0](https://github.com/luisrudge/next.js-auth0) made by [Luís Rudge](https://github.com/luisrudge).
