@@ -1,7 +1,7 @@
 <template>
   <div>
     <super-secret-div v-if="isAuthenticated"/>
-    <div class="main">
+    <div class="content">
       <h1>Hello, {{ loggedUser ? loggedUser.username : 'friend' }}!</h1>
       <p>
         This is a super simple example of how to use <a href="https://github.com/nuxt/nuxt.js" target="_blank">Nuxt.js</a> and <a hrf="https://auth0.com" target="_blank">Auth0</a> together.
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-.main {
+.content {
   max-width: 750px;
   margin: 0 auto;
   text-align: center;

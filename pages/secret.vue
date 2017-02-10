@@ -1,5 +1,5 @@
 <template>
-  <div class="main" v-if="loggedUser">
+  <div class="content" v-if="loggedUser">
     <img :src="loggedUser.picture"/>
     <p>Hi {{ loggedUser.email }}!</p>
     <p>This is a super secure page! Try loading this page again using the incognito/private mode of your browser.</p>
@@ -16,8 +16,9 @@ export default {
 </script>
 
 <style scoped>
-.main {
+.content {
   text-align: center;
+  padding-top: 20px;
 }
 img {
   width: 100px;
