@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Navbar from '~components/Navbar'
-import ForkThis from '~components/ForkThis'
+import Navbar from '~/components/Navbar'
+import ForkThis from '~/components/ForkThis'
 
 export default {
   components: {
