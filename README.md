@@ -4,7 +4,7 @@
 
 ![nuxt-auth0](https://cloud.githubusercontent.com/assets/904724/22703834/d971838c-ed65-11e6-90f9-5ecf2a1be5f0.gif)
 
-You can access a simple demo here: https://auth0.nuxtjs.org
+You can access a simple demo here: https://nuxt-auth0.surge.sh/
 
 ## Credits
 
