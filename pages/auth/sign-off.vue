@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import { unsetToken } from '~/utils/auth'
-import { logout } from '~/utils/lock'
-
 export default {
   mounted () {
+    const unsetToken = require('~/utils/auth').unsetToken
+    const logout = require('~/utils/lock').logout
+
     unsetToken()
     logout()
   }

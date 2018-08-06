@@ -27,5 +27,5 @@ const getOptions = (container) => {
   }
 }
 
-export const show = (container) => getLock(getOptions(container)).show()
+export const showLogin = (container) => getLock(getOptions(container)).show()
 export const logout = () => getLock().logout({ returnTo: getBaseUrl() })

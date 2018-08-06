@@ -3,12 +3,11 @@
 </template>
 
 <script>
-import { show } from '~/utils/lock'
-
 export default {
   middleware: 'anonymous',
   mounted () {
-    show('auth0-lock')
+    const showLogin = require('~/utils/lock').showLogin
+    showLogin('auth0-lock')
   }
 }
 </script>
