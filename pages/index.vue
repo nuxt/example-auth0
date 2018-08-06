@@ -18,7 +18,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import SuperSecretDiv from '~components/SuperSecretDiv'
+import SuperSecretDiv from '~/components/SuperSecretDiv'
 
 export default {
   computed: mapGetters([

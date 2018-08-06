@@ -1,5 +1,7 @@
-export const state = {
-  user: null
+export const state = () => {
+  return {
+    user: null
+  }
 }
 
 export const mutations = {
