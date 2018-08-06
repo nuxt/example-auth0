@@ -4,7 +4,7 @@
     <div class="content">
       <h1>Hello, {{ loggedUser ? loggedUser.username : 'friend' }}!</h1>
       <p>
-        This is a super simple example of how to use <a href="https://github.com/nuxt/nuxt.js" target="_blank">Nuxt.js</a> and <a hrf="https://auth0.com" target="_blank">Auth0</a> together.
+        This is a super simple example of how to use <a href="https://github.com/nuxt/nuxt.js" target="_blank">Nuxt.js</a> and <a href="https://auth0.com" target="_blank">Auth0</a> together.
       </p>
       <p v-if="!isAuthenticated">
         You're not authenticated yet. Maybe you want to <nuxt-link to="/auth/sign-in" class="link">sign in</nuxt-link> and see what happens?
