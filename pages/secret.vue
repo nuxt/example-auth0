@@ -1,17 +1,19 @@
 <template>
-  <div class="content" v-if="loggedUser">
-    <img :src="loggedUser.picture"/>
-    <p>Hi {{ loggedUser.email }}!</p>
+  <div class="content">
+    <img :src="user.picture"/>
+    <p>Hi {{ user.email }}!</p>
     <p>This is a super secure page! Try loading this page again using the incognito/private mode of your browser.</p>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-
 export default {
-  middleware: 'authenticated',
-  computed: mapGetters(['loggedUser'])
+  middleware: 'auth',
+  computed: {
+    user() {
+      return this.$auth.user
+    }
+  }
 }
 </script>
 

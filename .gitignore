@@ -11,4 +11,4 @@ npm-debug.log
 dist
 
 # Auth0 config
-config.json
+.env

@@ -1,10 +1,6 @@
-module.exports = {
-  /*
-  ** Router config
-  */
-  router: {
-    middleware: 'check-auth'
-  },
+import 'dotenv/config'
+
+export default {
   /*
   ** Headers of the page
   */
@@ -24,13 +20,25 @@ module.exports = {
   */
   css: [
     'normalize.css',
-    '~assets/main.css'
+    '@/assets/main.css'
   ],
   /*
-  ** Environement variables
+  ** Modules
   */
-  env: {
-    AUTH0_CLIENT_ID: '',
-    AUTH0_CLIENT_DOMAIN: ''
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/auth'
+  ],
+  auth: {
+    redirect: {
+      login: '/', // redirect user when not connected
+      callback: '/auth/signed-in'
+    },
+    strategies: {
+      auth0: {
+        domain: process.env.AUTH0_DOMAIN,
+        client_id: process.env.AUTH0_CLIENT_ID
+      }
+    }
   }
 }
