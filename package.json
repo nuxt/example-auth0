@@ -21,6 +21,12 @@
   },
   "bundledDependencies": [
     "dotenv",
-    "vue-client-only"
+    "vue-client-only",
+    "node-fetch",
+    "vue",
+    "vue-meta",
+    "vue-no-ssr",
+    "vue-router",
+    "vuex"
   ]
 }
