@@ -1,14 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "nuxt.config.js",
-      "use": "@nuxtjs/now-builder",
-      "config": {},
-      "env": {
-        "AUTH0_DOMAIN": "@auth0-domain",
-        "AUTH0_CLIENT_ID": "@auth0-client-id"
-      }
+  "build": {
+    "src": "nuxt.config.js",
+    "use": "@nuxtjs/now-builder",
+    "env": {
+      "AUTH0_DOMAIN": "@auth0-domain",
+      "AUTH0_CLIENT_ID": "@auth0-client-id"
     }
-  ]
+  }
 }
