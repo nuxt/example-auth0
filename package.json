@@ -13,7 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "auth0-lock": "11.8.1",
+    "auth0-lock": "11.21.0",
     "js-cookie": "2.2.0",
     "jwt-decode": "2.2.0",
     "normalize.css": "^8.0.0",
