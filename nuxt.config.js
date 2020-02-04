@@ -40,5 +40,9 @@ export default {
         client_id: process.env.AUTH0_CLIENT_ID
       }
     }
+  },
+  build: {
+    // For stormkit.io
+    publicPath: process.env.PUBLIC_PATH,
   }
 }
