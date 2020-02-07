@@ -26,7 +26,9 @@ export default {
   ** Modules
   */
   modules: [
+    // axios is required by @nuxtjs/auth
     '@nuxtjs/axios',
+    // https://auth.nuxtjs.org
     '@nuxtjs/auth'
   ],
   auth: {
