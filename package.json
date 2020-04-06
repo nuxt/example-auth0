@@ -10,13 +10,13 @@
     "start": "nuxt-start"
   },
   "dependencies": {
-    "@nuxtjs/auth": "^4.8.5",
-    "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/auth": "^4.9.0",
+    "@nuxtjs/axios": "^5.9.7",
     "dotenv": "^8.2.0",
     "normalize.css": "^8.0.1",
-    "nuxt-start": "^2.11.0"
+    "nuxt-start": "^2.12.2"
   },
   "devDependencies": {
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.12.2"
   }
 }
