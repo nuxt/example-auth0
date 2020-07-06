@@ -21,6 +21,7 @@ a {
   font-weight: 400;
   line-height: 30px;
   transition: border-bottom .2s;
+  cursor: pointer;
 }
 a:hover {
   border-bottom-color: #333;
