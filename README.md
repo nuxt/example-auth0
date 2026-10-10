@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository is archived. This example was designed for Nuxt 2, which reached end of life on June 30, 2024. For authentication in Nuxt 3+, see [Sessions and Authentication](https://nuxt.com/docs/guide/recipes/sessions-and-authentication).
+
 # nuxt-auth0
 
 > A simple example that shows how to use [Nuxt.js](https://nuxtjs.org) with [Auth0](https://auth0.com)
